@@ -1,0 +1,1108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: raleway;
+    font-size: 14px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #eeeeee;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -- Perfil -- */
+.perfil {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.perfil-overlay {
+    width: 100%;
+    height: 100%;
+    background: #0f0f0f8c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter:blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.area-perfil {
+    width: 300px;
+    height: 550px; 
+}
+
+.foto-area {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.foto-fundo {
+    width: 100%;
+    height: 170px;
+    background: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.foto-de-perfil {
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+
+.info-area {
+    width: 100%;
+    height: 30%;
+}
+
+.nome {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome h1 {
+    font-size: 35px;
+    color: #e8e8e8;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+
+.profissao {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.profissao h5 {
+    color: #e8e8e8;
+    font-weight: 300;
+}
+
+.menu-area {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.menu-area img{
+    width: 35px;
+}
+
+.menu-box {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #1c1c1cbb, #000000e3);
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.menu-box-int {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fechar-menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fechar-menu div {
+    color: #e8e8e8;
+    font-size: 20px;
+}
+
+.menu-container {
+    width: 250px;
+    height: 621px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-container h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #e8e8e8;
+    font-family: 'playfair display';
+    font-weight: 300;
+}
+
+.linha-titulo-menu {
+    width: 100%;
+    height: 1px;
+    background: #e8e8e8;
+    margin-bottom: 20px;
+}
+
+.menu-container ul li {
+    list-style: none;
+    font-size: 22px;
+    color: #e8e8e8;
+    font-weight: 200;
+    padding: 5px 0px 5px 32px;
+    text-align: left;
+}
+
+.redes-sociais {
+    width:200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.redes-sociais i {
+    color: #e8e8e8;
+    padding: 15px 15px 8px 15px;
+    font-size: 25px;
+}
+
+.menu-fixed {
+    width: 52px;
+    height: 52px;
+    background: #1c1c1c;
+    box-shadow: 0px 0px 5px 5px #e8e8e854;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+
+.menu-area-desktop {
+    display: none;
+}
+/* -- Fim perfil -- */
+
+/* -- Sobre -- */
+
+.sobre {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.8s ease-in;
+}
+
+.sobre-int {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 40px 0px;
+}
+
+.conteudo {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-sobre {
+    width: 100%;
+    height: auto;
+}
+
+.titulo-sobre h2, span {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+}
+
+.conteudo-sobre {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+.conteudo-sobre p {
+    font-size: 14px;
+}
+
+/* -- Fim sobre -- */
+
+/* -- Habilidades -- */
+
+.habilidades {
+    width: 100%;
+    height: auto;
+}
+
+.tela-habilidades {
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/background/habilidades5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tela-habilidades-overlay {
+    width: 100%;
+    height: 100%;
+    background: #000000b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tela-habilidades-overlay h2 {
+    color: #e8e8e8;
+    font-size: 45px;
+    font-family: 'playfair display';
+    font-weight: 500;
+}
+
+.titulo-habilidades {
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+
+.linha-habilidades {
+    width: 180px;
+    height: 2px;
+    background: #e8e8e8;
+}
+
+.conteudo-habilidades {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-habilidade-int {
+    width: 90%;
+    height: auto;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.habilidades-texto {
+    width: 337px;
+    height: auto;
+    padding: 10px 0px 20px 0px; ;
+    margin: 20px 0px 20px 0px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.185);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-da-habilidade {
+    width: 300px;
+    padding: 10px 0px 5px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titulo-da-habilidade h2 {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.descricao-habilidade {
+    width: 300px;
+    height: auto;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+
+.tecnologias {
+    width: 300px;
+    height: 65px;
+    display: flex;
+}
+
+.tec {
+    width: 33.3%;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.tec p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.experiencias-tecnologia {
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 5px;
+}
+/* -- Fim habilidades -- */
+
+/* -- Portfólio -- */
+
+.portfolio {
+    width: 100%;
+    height: auto;
+    background: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.portfolio-int {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-portfolio {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.titulo-portfolio h2 {
+    color: #e8e8e8;
+    font-family: playfair display;
+    font-size: 45px;
+}
+
+.conteudo-portfolio {
+    width: 300px;
+    height: auto;
+    padding: 20px 0px 40px 0px;
+}
+
+.border-conteudo-portifa {
+    border-bottom: 1px #e8e8e8 solid;
+}
+
+.titulo-do-portifa {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.titulo-do-portifa h2 {
+    font-size: 27px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.conteudo-do-portifa {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.conteudo-do-portifa p {
+    color:#fff;
+}
+
+.botao-do-portifa button {
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    padding: 7px;
+    border: 0;
+    background: #e8e8e8;
+}
+/* -- Fim portfólio -- */
+
+/* -- Objetivo -- */
+
+.objetivo {
+    width: 100%;
+    height: auto;
+    background: #e8e8e8;
+    padding: 25px 0px 70px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-objetivo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-objetivo-int {
+    width: 300px;
+    height: auto;
+    padding: 50px 0px 20px 0px;
+}
+
+.titulo-objetivo-int h2 {
+    font-size: 45px;
+    color: #1c1c1c;
+    font-family: 'playfair display';
+}
+
+.conteudo-objetivo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-objetivo p {
+    width: 300px;
+    color: #1c1c1c;
+}
+
+/* -- Fim objetivo -- */
+
+/* -- Contato -- */
+
+.contato {
+    width: 100%;
+    height: 800px;
+    background-image: url('../images/background/contato.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contato-int {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-area {
+    width: 337px;
+    height: 500px;
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1d1d1d59;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.titulo-form h2{
+    font-size: 40px;
+    color: #e8e8e8;
+    font-family: 'playfair display';
+}
+
+input {
+    width: 300px;
+    padding-top: 20px;
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px #e8e8e8 solid;
+    outline: 0;
+    color: #e8e8e8;
+}
+
+input::placeholder {
+    color: #e8e8e8;
+}
+
+textarea {
+    width: 210px;
+    padding-top: 20px;
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px #e8e8e8 solid;
+    outline: 0;
+}
+
+textarea::placeholder {
+    color: #e8e8e8;
+}
+
+.button-contato {
+    width: 300px;
+    height: 40px;
+    background: #1c1c1c;
+    color: #e8e8e8;
+    border: 0;
+    margin-top: 10px;
+}
+
+.whatsapp {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
+
+.whatsapp p {
+    color: #e8e8e8;
+}
+
+.whatsapp img {
+    padding-top: 10px;
+}
+
+/* -- Fim contato -- */
+
+@media screen and (min-width:600px) {
+
+/* -- Perfil -- */
+
+    .area-perfil {
+        width: 500px;
+        height: 600px;
+    }
+    
+    .foto-de-perfil img{
+      width: 400px;
+    }
+
+    .nome h1 {
+        font-size: 54px;
+        padding-top: 20px;
+    }
+
+    .profissao {
+        height: auto;
+        padding: 70px 0px 70px 0px;
+    }
+
+    .profissao h5 {
+        font-size: 25px;
+    }
+
+    .menu-area {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    
+    .fechar-menu div {
+        color: #e8e8e8;
+        font-size: 40px;
+    }
+
+
+    .menu-container h2 {
+        font-size: 70px;
+    }
+
+    .menu-container ul li{
+        font-size: 37px;
+    }
+    
+    .menu-area img{
+        width: 70px;
+    }
+
+    .menu-fixed {
+        width: 90px;
+        height: 90px;
+    }
+
+    .menu-fixed img {
+        width: 50px;
+    }
+
+    .menu-container {
+        width: 450px;
+    }
+
+    .redes-sociais i {
+        font-size: 50px;
+    }
+/* -- Fim Perfil -- */
+
+/* -- Conteudo sobre -- */
+
+    .conteudo-sobre p {
+        line-height: 20px;
+    }
+
+/* -- Habilidades -- */
+
+    .conteudo {
+        width: 500px;
+    }
+
+    .habilidades-texto {
+        width: 550px;
+        height: auto;
+    }
+
+    .titulo-da-habilidade h2 {
+        font-size: 33px;
+    }
+
+    .descricao-habilidade {
+        width: 500px;
+        height: auto;
+        padding: 20px 0px 20px 0px;
+        line-height: 20px;
+    }
+    
+    .titulo-da-habilidade {
+        width: 500px;
+        padding: 30px 0px 5px 0px;
+    }
+
+    .tecnologias {
+        width: 500px;
+        height: auto;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .tec {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 0px 30px 0px 0px;
+    }
+
+    
+    .experiencias-tecnologia {
+        width: 500px;
+        display: flex;
+        justify-content: flex-start;
+    }
+ 
+/* -- Fim habilidades -- */
+
+/* -- Projetos -- */ 
+    .titulo-portfolio {
+        width: 500px;
+    }
+    
+    .conteudo-portfolio {
+        width: 500px;
+        height: auto;
+        padding: 20px 0px 40px 0px;
+    }
+
+/* -- Fim projetos -- */
+
+/* -- Objetivos -- */
+
+    
+    .titulo-objetivo-int {
+        width: 500px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .conteudo-objetivo {
+        width: 500px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .conteudo-objetivo p {
+        width: 500px;
+        color: #1c1c1c;
+    }
+    
+    .form-area {
+        width: 550px;
+    }
+
+    
+    input {
+        width: 500px;
+    }
+
+    textarea {
+        width: 350px;
+    }
+
+    .button-contato {
+        width: 100px;
+    }
+/* -- Fim objetivos -- */
+}
+
+@media screen and (min-width: 1024px) {
+    .area-perfil {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    .perfil {
+        background-image: url('../images/background/bg4.jpg');
+    }
+
+    .perfil-overlay {
+        width: 100%;
+        height: 100%;
+        background: #0f0f0f8c;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        backdrop-filter:blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+    
+
+    .area-perfil {
+        width: 900px;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .foto-area {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .foto-fundo {
+        width: 290px;
+        margin-bottom: 30px;
+    }
+    
+    .foto-de-perfil img {
+        width: 240px;
+    }
+    
+    .info-area {
+        display: flex;
+        height: 200px;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .profissao {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .profissao h5 {
+        font-size: 17px;
+    }
+
+    .menu-area {
+        display: none;
+    }
+
+    .menu-area-desktop {
+        width: 100%;
+        height: 105px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-area-desktop ul li {
+        list-style: none;
+        float: left;
+        color: #e8e8e8;
+        padding: 15px 15px 8px 15px;
+    }
+
+    .menu-area-desktop ul li:hover {
+        border-bottom: 2px solid #e8e8e8;
+        cursor: pointer;
+        transition: all 0.1s ease-in;
+    }
+
+    .redes-sociais {
+        width:200px;
+        height: 105px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+
+    .redes-sociais i {
+        color: #e8e8e8;
+        padding: 15px 15px 8px 15px;
+        font-size: 18px;
+    }
+
+    .redes-sociais i:hover {
+        width: auto;
+        border-bottom: 2px #e8e8e8 solid;
+        transition: all 0.1s ease-in;
+        cursor: pointer;
+    }
+
+    .menu-fixed {
+        display: none;
+    }
+    
+/* -- Sobre -- */
+
+    .sobre {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+}
+
+    .sobre-int {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .conteudo {
+        width: 900px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .titulo-sobre {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulo-sobre h2, span {
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+    }
+
+    .conteudo-sobre {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;  
+    }
+    
+
+    .conteudo-sobre p {
+        font-size: 14px;
+    }
+
+/* -- Fim sobre -- */
+
+/* -- Habilidades -- */ 
+    .conteudo-habilidade-int {
+        width: 1147px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    .habilidades-texto {
+        width: 550px;
+        height: 337px;
+        margin: 40px 0px 40px 0px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.185);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    
+    .descricao-habilidade {
+        width: 500px;
+        height: auto;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .portfolio-area {
+        width: 1147px;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .titulo-portfolio {
+        width: 1147px;
+        height: 80px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .titulo-portfolio h2 {
+        padding: 0;
+    }
+
+    .conteudo-portfolio {
+        width: 515px;
+        height: auto;
+        padding: 50px 10px 40px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        border: 0;
+    }
+
+    .portfolio {
+        padding: 80px 0px 110px 0px;
+    }
+
+    .objetivo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        padding: 0;
+    }
+
+    .titulo-objetivo-int {
+        width: 900px;
+        height: auto;
+        padding: 0px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .objetivo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 320px;
+        padding: 0;
+    }
+
+    .conteudo-objetivo {
+        width: 900px;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .conteudo-objetivo p {
+        width: 900px;
+        color: #1c1c1c;
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    
+    .contato {
+        width: 100%;
+        height: 550px;
+        background-image: url('../images/background/contato3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .form-area {
+        width: 570px;
+        height: 390px;
+        padding: 20px 0px 50px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #1d1d1d59;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+}
+
+.load {
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+}
+
+@media screen and (min-width: 1500px) {
+    
+    .area-perfil {
+        width: 900px;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

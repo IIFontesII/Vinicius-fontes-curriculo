@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: raleway;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #e8e8e8;
+    scroll-behavior: smooth;
+}
+
+/* -- HEADER PORTIFOLIO -- */
+
+.portifolio-programacao-header {
+    width: 100%;
+    height: 200px;
+    background-image: url('../imagens/bg/bg.jpg');
+    background-size: cover;
+}
+
+.portifolio-programacao-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.644);
+    display: flex;
+    justify-content: center;
+}
+
+.portifolio-int {
+    width: 90%;
+    height: 100%;
+}
+
+.botao-voltar-area {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.titulo-portifolio-programacao {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-portifolio-programacao h2 {
+    font-size: 35px;
+    font-weight: 300;
+    color: #e8e8e8;
+    font-family: 'playfair display';
+}
+
+/* -- FIM HEADER PORTIFOLIO -- */
+
+/* -- CONTEUDO PORTIFOLIO -- */
+.conteudo-portifolio {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.conteudo-portifolio-int {
+    width: 90%;
+    height: 100%;
+}
+
+.area-portifolio {
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.titulo-projetos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0px 20px 0px;
+}
+
+
+.titulo-projetos h3 {
+    font-size: 26px;
+    font-family: raleway;
+    font-weight: 400;
+} 
+
+.projeto {
+    width: 370px;
+    height: 340px;
+    margin: 10px 0px 10px 0px;
+}
+
+
+/* -- FIM CONTEUDO PORTIFOLIO -- */
+
+/*  */
+
+.menu-fixed {
+    width: 52px;
+    height: 52px;
+    background: #1c1c1c;
+    box-shadow: 0px 0px 5px 5px #e8e8e854;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    opacity: 0;
+}
+.arrow-up {
+    color: #e8e8e8;
+    font-size: 28px;
+}
+
+@media screen and (min-width: 600px) {
+
+    .projeto {
+        width: 730px;
+        height: 730px;
+        margin: 10px 0px 10px 0px;
+    }
+    .titulo-projetos h3 {
+        font-size: 43px;
+        font-family: raleway;
+        font-weight: 400;
+    } 
+    
+    .portifolio-programacao-header {
+        width: 100%;
+        height: 350px;
+        background-image: url('../imagens/bg/bg.jpg');
+        background-size: cover;
+    }
+
+    
+    .titulo-portifolio-programacao {
+        width: 100%;
+        height: 255px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .titulo-portifolio-programacao h2 {
+        font-size: 65px;
+    }
+    
+    .menu-fixed {
+        width: 92px; 
+        height: 92px;
+    }
+    .arrow-up {
+        font-size: 52px;
+    }
+
+    .botao-voltar-area {
+        height: 55px;
+    }
+
+    .botao-voltar {
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .portifolio-programacao-header {
+        width: 100%;
+        height: 450px;
+        background-image: url('../imagens/bg/bg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .titulo-portifolio-programacao {
+        width: 100%;
+        height: 325px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .titulo-projetos {
+        justify-content: center;
+    }
+
+    .projeto {
+        width: 330px;
+        height: 330px;
+        margin: 0px;
+        transition: all 0.4s ease-in;
+    }
+
+    .titulo-portifolio-programacao h2 {
+        font-size: 50px;
+    }
+    
+    .botao-voltar {
+        width: 35px;
+    }   
+}
+
+@media screen and (min-width: 1300px) {
+    .projeto {
+        width: 62vh;
+        height:62vh;
+        margin: 0;
+    }
+
+}
