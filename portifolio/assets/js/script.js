@@ -32,7 +32,7 @@ let projetos = document.querySelectorAll('.projeto');
 
 
     for(let i = 0; i <= projetos.length; i++) {
-        projetos[i].style.backgroundImage = `url('assets/imagens/portifa/projetosfinais/arte${i}.png')`;
+        projetos[i].style.backgroundImage = `url('assets/imagens/portifa/projetosfinais/arte${i}.jpg')`;
         projetos[i].style.backgroundSize = `contain`;
         projetos[i].style.backgroundRepeat = 'no-repeat';
         projetos[i].style.backgroundPosition = `center`
