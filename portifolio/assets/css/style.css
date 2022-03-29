@@ -218,8 +218,8 @@ body, html {
 
 @media screen and (min-width: 1300px) {
     .projeto {
-        width: 62vh;
-        height:62vh;
+        width: 330px;
+        height: 330px;
         margin: 0;
     }
 
